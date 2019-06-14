@@ -45,7 +45,7 @@ class FrontAuth
             } 
             else 
             {
-                return redirect()->guest('/');
+                return redirect()->guest('/login');
             }
         }
 

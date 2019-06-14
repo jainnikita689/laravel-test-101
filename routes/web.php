@@ -11,15 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
 
 // Routes For Items
 Route::group(['middleware' => ['front_auth']], function(){
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('items','ItemController');
 });
