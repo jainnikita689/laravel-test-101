@@ -14,9 +14,10 @@
 <li><code>git clone https://github.com/jainnikita689/laravel-test-101 </code></li>
 <li><code>cd laravel-test-101</code></li>
 <li><code>composer install</code></li>
+<li>Copy .env file on the root</li>
 <li><code>php artisan key:generate</code></li>
 <li>Create a database and add credetials in the <em>.env</em></li>
 <li>Change APP_URL in the <em>.env</em> file to your site URL</li>
 <li><code>php artisan migrate </code> to create tables</li>
-<li>Run Application</li>
+<li>Run Application using "php artisan serve"</li>
 </ul>
