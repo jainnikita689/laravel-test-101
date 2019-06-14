@@ -61,7 +61,7 @@
                             @endif
                         @else
                         <li class="nav-item">
-                                <a class="nav-link" href="{{ route('items') }}">{{ __('Items') }}</a>
+                                <a class="nav-link" href="{{ url('/items') }}">{{ __('Items') }}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
