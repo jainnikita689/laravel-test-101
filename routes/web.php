@@ -17,9 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 // Routes For Items
 Route::group(['middleware' => ['front_auth']], function(){
+Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('items','ItemController');
 });
